@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Loss Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0 10rem; /* Added padding to the left and right */
+          box-sizing: border-box;
+      }
+      .header, .sub-header {
+          text-align: center;
+          margin: 20px 0;
+      }
+      .p-signature {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 16px;
+      }
+
+      .sub-header {
+          color: #666;
+      }
+      .story-section {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start; /* Align items at the start of the container */
+          margin-bottom: 20px;
+          
+      }
+      .story-section img {
+          max-width: 100%; /* Allows image to be responsive and adapt to its container size */
+          height: auto; /* Maintains aspect ratio */
+          object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
+          margin-right: 45px; /* Maintain space between image and text */
+          padding-top: 1%;
+
+      }
+      .story-section .text, .story-section .text p {
+          font-size: 22px; /* Set font size for paragraphs */
+          line-height: 2.2; /* Increase line spacing */
+          margin-top: 0; /* Ensure text starts at the top */
+      }
+      h2.blue-background {
+          background-color: #00D1E8;
+          color: black;
+          padding: 10px;
+          text-align: center;
+          font-size: 32px;
+      }
+      .cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    text-align: center;
+      }
+
+      .cta-button {
+      background-color: #ffe300;
+      color: black;
+      border-radius: 50px;
+      font-weight: bold;
+      border: none;
+      padding: 0px 30px;
+      margin: 10px 0;
+      cursor: pointer;
+      line-height: 0;
+      text-decoration: none; /* If the button is a link */
+      }
+      .discover{
+      font-size: 28px;
+      }
+      .cta-image {
+      width: 200px; /* Adjust this value to make the image larger */
+      height: auto; /* This will maintain the aspect ratio */
+      margin-bottom: 10px;
+      }
+      #textss{
+            color: #666666;
+            font-weight: normal;
+            font-size: 25px;
+      }
+      /* Additional styles */
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the comment blocks vertically */
+    margin: 20px 0;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start; /* Keep the image at the top */
+    width: 100%; /* Use the full width of the container */
+    max-width: 800px; /* Or any specific width you prefer */
+    margin-bottom: 20px; /* Space between comments */
+    padding-bottom: 20px; /* Space at the bottom of each comment */
+    border-bottom: 1px solid #ccc; /* Divider */
+    justify-content: flex-start; /* Align content to the start */
+}
+
+
+.comment img {
+    width: 60px; /* Size of the image */
+    height: 60px; /* Size of the image */
+    border-radius: 50%; /* Rounded corners */
+    object-fit: cover;
+    margin-right: 15px; /* Space between image and comment text */
+}
+
+.comment .comment-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text items to the start */
+    text-align: left; /* Ensure text alignment is left for readability */
+}
+
+
+.comment .name {
+    font-weight: bold;
+}
+
+.comment .likes {
+    font-size: 14px;
+    color: #666;
+}
+.comment {
+    display: flex;
+    align-items: flex-start; /* Keep the image at the top */
+    margin-bottom: 20px; /* Space between comments */
+    padding-bottom: 20px; /* Space at the bottom of each comment */
+    border-bottom: 1px solid #ccc; /* Divider */
+}
+
+.comment img {
+    width: 60px; /* Size of the image */
+    height: 60px; /* Size of the image */
+    border-radius: 50%; /* Rounded corners */
+    object-fit: cover;
+    margin-right: 15px; /* Increased space between image and comment text */
+}
+
+.comment:last-child {
+    border-bottom: none; /* No divider after the last comment */
+}
+
+.comment .comment-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.comment .name, .comment .likes {
+    margin: 5px 0; /* Added for better spacing */
+}
+
+
+      @media (min-width: 768px) {
+        .story-section img {
+            width: auto; /* Allows the image to maintain its natural size */
+            max-width: 337.5px; /* 1.5 times bigger than the original 225px */
+            height: auto; /* Adjusts height automatically to preserve aspect ratio */
+        }
+        .story-section {
+            padding: 0 10px; /* Adjusts padding for story sections on larger screens if needed */
+        }
+        .story-section .text {
+            flex: 2; /* Allow text section to take more space on larger screens */
+        }
+    }
+  </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Discover How a Simple Rice Method made me LOSE HALF MY SIZE taking me From 203 to 129!</h1>
+    </div>
+    <div class="sub-header">
+        <h2>"Now Strangers Confuse ME with My Daughter! 😂"</h2>
+    </div>
+
+    <div class="story-section">
+        <img src="https://www.happydaysback.com/hosted/images/33/13b869f55d4b148eb9087294510978/Screenshot-2023-09-25-at-10.59.20-AM.png" alt="Transformation Story">
+        <div class="text">
+            <p>Hi, I'm Olivia. I'm 51 years old and been married for 41 years. I also have 3 kids and 6 beautiful grandkids. And thank God, I recently found a way to look & feel like my younger self again...
+
+                  When I was in my 20s and 30s, I used to... </br>
+                  
+                  ​Have loads of energy all day long... </br>
+                  
+                  ​Keep a slim physique while enjoying pizza and burgers... </br>
+                  
+                  ​Eat what I liked—whenever I liked—without paying for it later... </br>
+                  
+                  ​Stay in amazing shape while rarely stepping foot in the gym... </br>
+                  ​
+                  ​Feel self-confident wearing fun, form-fitting tops, shorts, and summer dresses... </br>
+                  
+                  That was me every day...THEN I hit my early 40's.</p>
+        </div>
+    </div>
+
+      <h2 class="blue-background">After 40, My Health and Happiness Took a Nosedive...</h2>
+      <div class="story-section">
+            
+            <div class="text">
+                  <p>In the blink of an eye, my once thin & fit body started to attract pounds and "cushion" in all the wrong spots. </br>
+
+                        It felt like my youthful, fast metabolism had braked to a screeching HALT.</br>
+                        
+                        My overall health was plummeting—and so was my energy every day.</br>
+                        
+                        So, I went to bed earlier, hoping I wouldn't have to drag myself through the next day.</br>
+                        
+                        Some nights I slept for 12 HOURS, but I still felt tired!</br>
+                        
+                        Even with this, I still didn't understand how HORRIBLE my health had become.</br>
+                        
+                        UNTIL...our 40th anniversary arrived.</br>
+                        
+                        My husband had surprised me with a fancy trip to a Hawaiian resort.</br>
+                        
+                        On our first night, I went into the bathroom to freshen up, and there I saw it...</br>
+                        
+                        A shiny digital scale. (Our old one died at home and we never replaced it.)</br>
+                        
+                        Nervously, I stepped on it...just curious to see the number.</br>
+                        
+                        203?! No way! It had to be wrong.</br>
+                        
+                        I peeked again. Uggh. That glowing, red number almost took me out at the knees.</br>
+                        
+                        I glanced in the bathroom mirror, ashamed of the person staring back.</br>
+                        
+                        I looked really tired, bloated, and... well... "chunky".</br>
+                        
+                        What happened to me? How did I let myself get like this?</br>
+                        
+                        I obsessed over my "scale episode" the rest of our trip. And on the final night, as I slid into bed, I made a decision.</br>
+                        </p>
+            </div>
+        </div>
+        <div class="story-section">
+            <img src="https://www.happydaysback.com/hosted/images/99/d4731b6be942fa905d4dcffb1e492a/Screenshot-2023-09-25-at-11.03.25-AM.png" alt="Transformation Story">
+            <div class="text">
+                <p>First thing I did when I got home was start swimming (it was my high school sport). </br>
+
+                  But I found out quickly that even in water, my body couldn't handle all the weight I had gained.</br>
+                  
+                  Then, I tried eating salads and cutting out sugar.</br>
+                  
+                  It worked a little at first, but I was always hungry, so I ate snacks and lost my progress.</br>
+                  
+                  I even tried some strange home remedies a lady at my health food store guaranteed would work.</br>
+                  
+                  Like mixing beet juice, honey, oranges, strawberries, and more. (Spoiler: She was wrong.)</br>
+                  
+                  While still trying "natural home remedies," I also used body wraps and put ginger slices in my socks.</br>
+                  
+                  (I'm a bit embarrassed to say I slept with ginger in my socks...)</br>
+                  
+                  Next, I tried a low-carb diet. There were some great meals, but I missed eating pasta a lot.</br>
+                  
+                  Then I tried calorie counting, went gluten-free, and even became a vegetarian for a whole month. BUT, my weight didn't change!</br>
+                  
+                  I wondered, "Is something wrong with me on the inside?"</br>
+                  
+                  So, I made an appointment with my doctor to get checked.</br>
+                  </p>
+            </div>
+        </div>
+        <h2 class="blue-background">I Was Blown Away by What My Doctor Revealed!</h2>
+        <div class="story-section">
+            <img src="https://www.happydaysback.com/hosted/images/13/93d447f0c7429db40747cdb976d333/Screenshot-2023-09-25-at-11.06.01-AM.png" alt="Transformation Story">
+            <div class="text">
+                <p>He told me casually: "Olivia, don't worry. You've done nothing wrong." </br>
+
+                  He said my consistent weight gain had NOTHING to do with what I ate or how much I worked out.</br>
+                  
+                  He then spoke quietly, glancing down the hallway as if checking if anyone in the clinic was listening...</br>
+                  
+                  In a hushed voice, he said, "Olivia, I've known you and Phil for decades. I wouldn't tell this to just anybody, but I want to show you something I discovered recently that can help you."</br>
+                  
+                  "It's a little unusual, but it's backed by groundbreaking scientific research.</br>
+                  
+                  
+                  I thought he was going to give me some "miracle" supplement or pill...</br>
+                  
+                  But I was SO wrong...</br>
+                  
+                  He told me about a "Rice Method" he learned about at a conference a few weeks back.</br>
+                  
+                  At first, he didn't believe it, but after seeing how people lost weight in their most stubborn areas when nothing else worked, he knew it was a real solution.</br>
+                  </p>
+            </div>
+        </div>
+        <div class="story-section">
+            <img src="https://www.happydaysback.com/hosted/images/0b/512ca2050f408ab99336b56b130ddf/Screenshot-2023-10-24-at-9.35.03-AM.png" alt="Transformation Story">
+            <div class="text">
+                <p>He said, "there are 3 almost unbelievable benefits people experienced by using this method… <br>
+
+                  ​  <strong>1</strong>. No need to change what you eat <br>
+                  ​  <strong>2</strong>.  Keep a slim physique while enjoying pizza and burgers... <br>
+                  ​  <strong>3</strong>. It worked REALLY fast <br>
+                  
+                  "And, best yet, it takes only a few seconds each day."<br>
+                  
+                  He said, "all the info is right here."<br>
+                  
+                  Then he gave me a piece of paper with a website on it.<br>
+                  
+                  After all that, I couldn't drive home fast enough to check it out!<br>
+                  
+                  Actually, I didn't even wait until I got home. I watched it on my phone in the doctor's parking lot.<br>
+                  
+                  An hour whizzed by in a blur, and I was just AMAZED by everything I learned in the video.<br>
+                  
+                  <strong>Could something so easy really change my body and life that fast?</strong><br>
+                  
+                  I had questions in my mind, but my heart said "YES! This is the answer for you!"<br>
+                  
+                  As you can probably imagine, I listened to my heart...<br>
+                  </p>
+            </div>
+        </div>
+        <h2 class="blue-background">99% of People Have Never Even Heard Of This</h2>
+        <div class="story-section">
+            <img src="https://www.happydaysback.com/hosted/images/c6/4da93283304ff590d76ecf588a38fa/Screenshot-2023-09-25-at-11.17.24-AM.png" alt="Transformation Story">
+            <div class="text">
+                <p>So, I've been using this "Rice Method" for a while now, and I'm SO excited! <br>
+
+                  Right away, I began seeing results, just like the doctor said I would.<br>
+                  
+                  The numbers on the scale started falling on Day 2 and haven't stopped since.<br>
+                  
+                  It feels like I'm buying new clothes every other week.<br>
+                  
+                  And I can't believe it when I shop in the women's small section... not the big sizes!<br>
+                  
+                  My husband noticed the change, too...😉. Let's just say our relationship has a new spark, even at our age!<br>
+                  
+                  He decided to try this "Rice Method" as well. Yep, it works for men, too!<br>
+                  Other things I've also noticed since I started doing it is... <br>
+                  ✅ My energy has SOARED. At 62, I feel more like I'm 30 now! <br>
+
+                  ✅ I feel full & happy after meals and don't want to snack all day.<br>
+
+                  ​✅ But, I'm actually eating MORE of my favorite foods, like homemade cupcakes and chocolate chip cookies, without ANY guilt!<br>
+
+                  ✅ ​My blood sugar levels are better, even though I'm eating more sweet treats. Amazing, huh?<br>
+
+                  ​✅ I sleep like a rock now, waking up ready and full of energy for the day.<br>
+
+                  </p>
+            </div>
+        </div>
+        <h2 class="blue-background">Thank God I Followed My Heart, and Not My Head...</h2>
+<div class="story-section">
+      <div class="text">
+            <p>
+                  I could have easily ignored my doctor when he told me about this unusual morning "Rice Method". But, I decided to push my skepticism aside and give it a try. <br>
+      
+                  Now, I totally love who I am. I'm the "REAL ME" again.<br>
+      
+                  And, I don't have to worry about my health—now or in the future.<br>
+      
+                  All because I took some time to learn about this ancient metabolic trick. Who would've guessed?<br>
+      
+                  Naturally, people are starting to ask me what I'm doing to get results so fast.<br>
+      
+                  So, I put a link to the same website where I learned about the drink below.<br>
+      
+                  That is... IF it's STILL there.<br>
+      
+                  I heard it might be taken down because of some legal challenges from a big pharma company that wants to keep this method hidden from everyone.<br>
+      
+                  It's probably a good idea to click the link right now to make sure you can learn about this "Rice Method" for yourself.<br>
+              </p>
+        </div>
+</div>
+        <div class="cta-section">
+            <img src="https://www.happydaysback.com/hosted/images/c6/4da93283304ff590d76ecf588a38fa/Screenshot-2023-09-25-at-11.17.24-AM.png" alt="Olivia Bennet" class="cta-image">
+            <p class="p-signature">Olivia Bennet</p>
+            <p class="p-signature">All the Best</p>
+            <a href="https://11972b0997us4ufk-mn-x4o59k.hop.clickbank.net" class="cta-button"><p class="discover">Discover the Rice Method</p> <p id="textss">Click Here For Access</p></a>
+        </div>
+        <h2 class="blue-background">Community Blog Comments</h2>
+        <div class="comment-section">
+            <div class="comment">
+                  <img src="https://www.happydaysback.com/hosted/images/4a/c67206035c46059f391f21783ffc92/Deb.jpg" alt="Another User Image">
+                  <div class="comment-text">
+                      <div class="name">
+                        Sarah Williams</div>
+                      <div class="comment-content">Amazing results! You should be very proud.</div>
+                      <div class="likes">👍 18 💬 8 🔗 9</div>
+                  </div>
+              </div>
+
+            <div class="comment">
+                <img src="https://www.happydaysback.com/hosted/images/ab/939d66576e4c51afa709272adf1853/Screenshot-2023-08-06-at-6.21.59-PM.png" alt="Another User Image">
+                <div class="comment-text">
+                    <div class="name">Rachel Dawes</div>
+                    <div class="comment-content">How can I do this? So inspiring. Keep it up! 😍
+                  </div>
+                    <div class="likes">👍 177 💬 782 🔗 22</div>
+                </div>
+            </div>
+            <div class="comment">
+                  <img src="https://www.happydaysback.com/hosted/images/4f/9875f51e044ef49c2b5224b36c55c2/5-happy-girls-share-the-secrets-to-always-having-a-smile-on-their-faces-vogue-india-4.jpg" alt="Another User Image">
+                  <div class="comment-text">
+                      <div class="name">Mary Fredericks</div>
+                      <div class="comment-content">Your transformation is spectacular! I feel SO excited now...you got me outta this pity party I've been havin for a while. Thank you! </div>
+                      <div class="likes">👍 872 💬 65 🔗 12</div>
+                  </div>
+              </div>
+              <div class="comment">
+                  <img src="https://www.happydaysback.com/hosted/images/a6/38cf9e0d8841089e9f47516d0b660b/skinny2.png" alt="Another User Image">
+                  <div class="comment-text">
+                      <div class="name">Bonnie Ingram · 4h</div>
+                      <div class="comment-content">Wow...that's great! What's the routine with eating? Any special exercise? </div>
+                      <div class="likes">👍 878 💬 12 🔗 92</div>
+                  </div>
+              </div>
+              <div class="comment">
+                  <img src="https://www.happydaysback.com/hosted/images/32/d8f9a556b440e2ab1fbe6046c3ab27/Megan2---resized.jpg" alt="Another User Image">
+                  <div class="comment-text">
+                      <div class="name">Sandra Knox</div>
+                      <div class="comment-content">I LOVE this Rice Method! Use it every morning myself. 🙏 
+                  </div>
+                      <div class="likes">👍 22 💬 77 🔗 12</div>
+                  </div>
+              </div>
+              <div class="comment">
+                  <img src="https://www.happydaysback.com/hosted/images/43/6023b1543b4808b72c8aff36965a60/bikinihead.png" alt="Another User Image">
+                  <div class="comment-text">
+                      <div class="name">Heather W.</div>
+                      <div class="comment-content">You look so thrilled! Congrats on your success! </div>
+                      <div class="likes">👍 872 💬 25 🔗 32</div>
+                  </div>
+              </div>
+              <div class="comment">
+                  <img src="https://www.happylonglive.net/hosted/images/e4/4a0f1c169c4fc9ac34c6138a73c329/Screenshot-2022-02-07-083154.png" alt="Another User Image">
+                  <div class="comment-text">
+                      <div class="name">
+                        Tonya Underwood</div>
+                      <div class="comment-content">You go girl! We all need to lift each other up. Love your story! ❤️ </div>
+                      <div class="likes">👍 127 💬 33 🔗 44</div>
+                  </div>
+              </div>
+             
+            <!-- Add more comments as needed -->
+        </div>
+    <!-- Additional content -->
+
+</body>
+<script>
+      setTimeout(function() {
+          window.location.href = "https://11972b0997us4ufk-mn-x4o59k.hop.clickbank.net";
+      }, 3000); // 3000 milliseconds = 3 seconds
+  </script>
+</html>
