@@ -191,6 +191,25 @@
             flex: 2; /* Allow text section to take more space on larger screens */
         }
     }
+    @media (max-width: 768px) {
+        body {
+            padding: 0.5rem; /* Smaller padding for mobile devices */
+        }
+        .story-section {
+            flex-direction: column; /* Stack elements vertically on small screens */
+        }
+        .story-section img {
+            margin-right: 0; /* Remove margin between image and text */
+            margin-bottom: 20px; /* Add space below image */
+        }
+        .story-section .text, .story-section .text p, h2.blue-background, .cta-button, .discover, .cta-image, #textss {
+            font-size: smaller; /* Adjust font size for mobile readability */
+        }
+        .comment img {
+            width: 50px; /* Smaller comment images */
+            height: 50px;
+        }
+  }
   </style>
 </head>
 <body>
